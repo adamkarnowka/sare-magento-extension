@@ -1,0 +1,13 @@
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addCss"><name>css/sare.css</name></action>
+        </reference>
+    </default>
+    <sare_adminhtml_index_subscribersgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="sare/adminhtml_dashboard_grids_subscribers" name="adminhtml.dashboard.tab.customers.most"/>
+        </block>
+    </sare_adminhtml_index_subscribersgrid>
+</layout>
+

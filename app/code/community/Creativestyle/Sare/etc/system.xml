@@ -1,0 +1,375 @@
+<config>
+    <tabs>
+        <creativestyle translate="label" module="sare">
+            <label>Creativestyle</label>
+            <sort_order>100</sort_order>
+        </creativestyle>
+    </tabs>
+    <sections>
+        <trans_email>
+            <groups>
+                <website_developer translate="label">
+                    <label>Website developer</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <email translate="label">
+                            <label>Sender Email</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-email</validate>
+                            <backend_model>adminhtml/system_config_backend_email_address</backend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </email>
+                        <name translate="label">
+                            <label>Sender Name</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_email_sender</backend_model>
+                            <validate>validate-emailSender</validate>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </name>
+                    </fields>
+                </website_developer>
+            </groups>
+
+            <groups>
+            <email_manager translate="label">
+                <label>E-mail marketing manager</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>99</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <fields>
+                    <email translate="label">
+                        <label>Sender Email</label>
+                        <frontend_type>text</frontend_type>
+                        <validate>validate-email</validate>
+                        <backend_model>adminhtml/system_config_backend_email_address</backend_model>
+                        <sort_order>2</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                    </email>
+                    <name translate="label">
+                        <label>Sender Name</label>
+                        <frontend_type>text</frontend_type>
+                        <backend_model>adminhtml/system_config_backend_email_sender</backend_model>
+                        <validate>validate-emailSender</validate>
+                        <sort_order>1</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                    </name>
+                </fields>
+            </email_manager>
+
+            </groups>
+        </trans_email>
+        <sare translate="label" module="sare">
+            <label><![CDATA[<div class="sare-settings-headline"> integration</div>]]></label>
+            <tab>creativestyle</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>140</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <settings translate="label">
+                    <label>General settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>-1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <info translate="label">
+                            <label></label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>sare/adminhtml_infoblock</frontend_model>
+                            <sort_order>-1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </info>
+                        <enabled>
+                            <label>Integration enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <comment>If no - everything is back do Magento default process.</comment>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>-15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <uid translate="label">
+                            <label>Your account ID</label>
+                            <validate>validate-number</validate>
+                            <sort_order>-1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </uid>
+                        <key>
+                            <label>Your account key</label>
+                            <tooltip>Unique and random string, which you have defined in your SARE account.</tooltip>
+                            <validate>required-entry</validate>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </key>
+                        <sare_endpoint_url>
+                            <label>API endpoint URL</label>
+                            <tooltip>Do not change, unless asked to</tooltip>
+                            <sort_order>270</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_class>sare-api-disabled</frontend_class>
+                            <validate>validate-url</validate>
+                        </sare_endpoint_url>
+                        <send_confirmation_email>
+                            <label>Send confirmation email from SARE</label>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>If you manage double opt-in by Magento - set this to no (recommended)</tooltip>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>149</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <tooltip>Please select correct setting here. It is really important that your addresses are double opt-in. You can either use Magento default workflow (recommended) or use SARE for sending confirmation emails - in this case - you need to setup subscription scenario at SARE side.</tooltip>
+                        </send_confirmation_email>
+                        <send_problem_mails>
+                            <label>Send problem notifications emails</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </send_problem_mails>
+                        <exceptions_sent_to>
+                            <label>Problem notifications sent to</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_identity</source_model>
+                            <sort_order>152</sort_order>
+                            <comment>Hold CTRL to select more than one</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><send_problem_mails>1</send_problem_mails></depends>
+                        </exceptions_sent_to>
+                        <notification_senderemail>
+                            <depends>
+                            <send_problem_mails>1</send_problem_mails>
+                            </depends>
+                            <label>E-mail sender email</label>
+                            <sort_order>159</sort_order>
+                            <validate>validate-email</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </notification_senderemail>
+                        <notification_sendername>
+                            <depends><send_problem_mails>1</send_problem_mails></depends>
+                            <label>E-mail sender name</label>
+                            <sort_order>158</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </notification_sendername>
+                        <save_as>
+                            <label>Save new subscribers with state</label>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>Make sure your subscribers are 100% confirmed!</tooltip>
+                            <source_model>creativestyle_sare/status</source_model>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </save_as>
+                        <logging_enabled translate="label">
+                            <label>Logging all requests to file</label>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>find in /var/log/sare.log (make sure you have logging enabled at system level)</tooltip>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1000</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </logging_enabled>
+                    </fields>
+                </settings>
+                <guest_settings>
+                    <label>Guest subscribers settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <synchro_enabled translate="label">
+                            <label>Synchronize guest subscribers</label>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>Guest subscriber means that email address is not assigned to registered customer</tooltip>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </synchro_enabled>
+                        <group_id translate="label">
+                            <label>New guest subscribers should be added to group:</label>
+                            <depends>
+                            <synchro_enabled>1</synchro_enabled>
+                            </depends>
+                            <comment>Select group (1-31) or 0 for no group</comment>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+                        </group_id>
+                    </fields>
+                </guest_settings>
+                <customer_settings translate="label">
+                    <label>Customer subscribers settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <synchro_enabled translate="label">
+                            <label>Synchronize customer subscribers</label>
+                            <tooltip>Customer subscribers are those registered clients who subscribed to newsletter.</tooltip>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </synchro_enabled>
+                        <group_id>
+                            <label>New customer subscribers should be added to group:</label>
+                            <tooltip>Guest subscribers guests who subscribed to newsletter. You don't have any data about them (address, name, etc.)</tooltip>
+                            <depends><synchro_enabled>1</synchro_enabled></depends>
+                            <comment>Select group (1-31) or 0 for no group</comment>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </group_id>
+                    </fields>
+                </customer_settings>
+                <targeting_settings>
+                    <label>Advanced targeting options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <info translate="label">
+                            <label>HTML block</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>sare/adminhtml_targetinginfoblock</frontend_model>
+                            <sort_order>-1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </info>
+                        <enabled translate="label">
+                            <label>Enable customer data synchro</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <enabled_login translate="label">
+                            <label>Update on login</label>
+                            <depends><enabled>1</enabled></depends>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <tooltip>Data at SARE side will be updated when customer logs in</tooltip>
+                        </enabled_login>
+                        <enabled_afterorder translate="label">
+                            <label>Update after order is placed</label>
+                            <depends><enabled>1</enabled></depends>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <tooltip>Data at SARE side will be updated after order is placed</tooltip>
+                        </enabled_afterorder>
+                        <enabled_addresschange translate="label">
+                            <label>Update on address change</label>
+                            <depends><enabled>1</enabled></depends>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <tooltip>Data at SARE side will be updated after customer changes his address</tooltip>
+                        </enabled_addresschange>
+                    </fields>
+                </targeting_settings>
+                <!--<abandonedcarts_settings>
+                <label>Abandoned carts interface</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>2</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <fields>
+                    <info translate="label">
+                        <label>HTML block</label>
+                        <frontend_type>text</frontend_type>
+                        <frontend_model>sare/adminhtml_abandonedcarts</frontend_model>
+                        <sort_order>-1</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                    </info>
+                    <enabled translate="label">
+                        <label>Enable abandoned carts interface</label>
+                        <frontend_type>select</frontend_type>
+                        <source_model>adminhtml/system_config_source_yesno</source_model>
+                        <sort_order>10</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                    </enabled>
+                    <timeout>
+                        <label>Treat quote as abandoned when it hasn't been updated for</label>
+                        <comment>in hours</comment>
+                        <depends><enabled>1</enabled></depends>
+                        <sort_order>75</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                    </timeout>
+                </fields>
+                </abandonedcarts_settings>-->
+            </groups>
+        </sare>
+    </sections>
+</config>

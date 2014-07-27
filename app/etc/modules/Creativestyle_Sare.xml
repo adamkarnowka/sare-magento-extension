@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Creativestyle_Sare>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Newsletter></Mage_Newsletter>
+            </depends>
+        </Creativestyle_Sare>
+    </modules>
+</config>

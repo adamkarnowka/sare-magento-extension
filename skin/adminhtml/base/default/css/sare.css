@@ -1,0 +1,237 @@
+.logEntry{
+    width:98%;
+    font-family: Courier New, Courier;
+    font-size:11px;
+    margin-bottom:3px;
+    padding:3px;
+    background-color: #FFFFB8;
+    border:1px solid #FFEC42;
+}
+
+ul.sare-batch {
+    padding:0;
+    padding-top:6px;
+    padding-left:18px;
+    margin:0;
+}
+
+#sare-toggler{
+    margin-top:10px;
+}
+ul.sare-batch li{
+    text-shadow: white 1px 1px;
+}
+
+div.saretext{
+    padding-top:5px;
+    padding-left:10px;
+
+
+}
+
+div.transfer {
+    border: 1px solid #EEE;
+    padding: 2px;
+    margin-bottom: 4px;
+    height:118px;
+    width:650px;
+    border-color: #B8DBC0;
+    background-color: white;
+    background: white url('../../../default/default/images/sare/transfer.png') no-repeat top right;
+}
+
+.sare-settings-headline{
+    background: transparent url(../../../default/default/images/sare/sare.png) no-repeat top left;
+    padding-left: 75px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+div.row{
+    padding:2px;
+    border:1px solid #fff47c;
+    background-color: #fffede;
+    width:650px;
+    height:16px;
+    margin-bottom:3px;
+}
+
+    div.cs-logo{
+    float: right;
+}
+
+div.creativestyle a{
+    color: #81251D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sare-labels{
+    clear: both;
+}
+div.labels div.row{
+    width: 580px;
+
+}
+
+#sare_targeting_settings-head{
+    /*background: transparent url('../../../default/default/images/sare/icon_user.png') no-repeat top left;
+    text-indent: 20px;*/
+}
+
+div.sare-key{
+    font-family: Courier new, Courier, Arial, sans-serif;
+    width:200px;
+    float: left;
+}
+
+div.user{
+    background: transparent url('../../../default/default/images/sare/icon_user.png') no-repeat top left;
+    text-indent:22px;
+}
+
+div.remove {
+    width:620px;
+    background: #fffede url('../../../default/default/images/sare/icon_remove.png') no-repeat 24px 0px;
+    padding-left:30px;
+    text-indent:22px;
+}
+
+input.sare-api-disabled{
+    background-color: #fffae1 !important;
+}
+
+#sare_settings_save_as option[value="8"]{
+    background-color: #e7fedb;
+    color: #111;
+}
+
+#block-abandoned-carts .inside{
+    margin-bottom:12px;
+    padding-right:12px;
+}
+
+div.creativestyle{
+    padding-top: 5px;
+    border-top: 1px solid #CCC;
+    margin-top: 16px;
+}
+
+#block-abandoned-carts .inside .url{
+    margin-top:5px;
+    margin-bottom:5px;
+    font-family: Courier,Courier New,Arial;
+    width:100%;
+    text-align:center;
+    padding:5px;
+    border:1px solid #e8e3eb;
+    background-color: #f2f4ee;
+}
+
+.labels .smaller-text{
+    font-size:10px;
+    padding:4px;
+    padding-left: 0px;
+    margin-bottom:5px;
+    line-height:12px;
+}
+
+#block-infoblock{
+    padding:5px;
+    width:590px;
+    height:110px;
+    background-color: white;
+    border:1px solid #DDD;
+    margin-bottom:20px;
+}
+
+#block-abandoned-carts{
+    padding:5px;width:590px;height:91px;background-color: #FFFFEF;border:1px solid #DDD;margin-bottom:20px;
+}
+
+#block-targeting{
+    padding:5px;width:590px;min-height:94px;background-color: white;border:1px solid #DDD;margin-bottom:20px;
+    background-color: #FFFFEF;
+}
+
+#block-targeting .inside{
+    height:100px;
+    margin-bottom:12px;
+
+}
+
+button.scalable span span{
+    background-image: none;
+}
+
+div.info{
+    width:620px;
+    background: #fffede url('../../../default/default/images/sare/icon_add.png') no-repeat 24px 0px;
+    padding-left:30px;
+    text-indent:22px;
+}
+
+div.complete{
+    width:620px;
+    background: #fffede url('../../../default/default/images/sare/icon_info.png') no-repeat 24px 0px;
+    padding-left:30px;
+    text-indent:22px;
+}
+
+div.success{
+    width:620px;
+    border-color: #B8DBC0;
+    background-color: #DDEBE0;
+    background: #DDEBE0 url('../../../default/default/images/sare/icon_success.png') no-repeat 24px 0px;
+    text-indent:22px;
+    padding-left:30px;
+}
+
+div.error{
+    width:620px;
+    border-color: #ffb0bf;
+    background-color: #ffdfdf;
+    background: #ffdfdf url('../../../default/default/images/sare/icon_remove.png') no-repeat 24px 0px;
+    text-indent:22px;
+    padding-left:30px;
+}
+
+
+#dashboard-sare{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom:20px;
+    margin-top: 20px;
+    border:0px solid #CCC;
+}
+
+#dashboard-sare th{
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+    width: 30%;
+}
+
+#dashboard-sare td.val{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    border:1px solid #CCC;
+    height: 40px;
+}
+
+#dashboard-sare td.val:hover{
+    background-color: white;
+    cursor: hand;
+}
+
+#dashboard-sare .subscribed{
+    background-color: #ecffed;
+}
+
+#dashboard-sare .unsubscribed{
+    background-color: #ffeee9;
+}
+
+#dashboard-sare .nonactivated{
+    background-color: #fcffec;
+}

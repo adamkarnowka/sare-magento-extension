@@ -1,0 +1,16 @@
+</fieldset></div>
+<div class="entry-edit">
+    <div class="entry-edit-head"><h4><?php echo $this->__('SARE statistics');?></h4></div>
+    <fieldset class="np">
+        <table id="dashboard-sare" cellspacing="5">
+            <tr>
+                <th><?php echo $this->__('Subscribed');?></th>
+                <th><?php echo $this->__('Unsubscribed');?></th>
+                <th><?php echo $this->__('Not activated');?></th>
+            </tr>
+            <tr>
+                <td class="val subscribed"><?php echo $this->getSubscribedCount();?></td>
+                <td class="val unsubscribed"><?php echo $this->getUnsubscribedCount();?></td>
+                <td class="val nonactivated"><?php echo $this->getNonActivated();?></td>
+            </tr>
+        </table>

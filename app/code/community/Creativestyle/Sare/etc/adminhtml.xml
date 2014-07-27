@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <newsletter translate="title" module="sare">
+            <children>
+                <sare translate="title" module="sare">
+                    <title>SARE integration</title>
+                    <action>adminhtml/system_config/edit/section/sare/</action>
+                </sare>
+            </children>
+        </newsletter>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <sare translate="title" module="sare">
+                                        <title>SARE integration</title>
+                                    </sare>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

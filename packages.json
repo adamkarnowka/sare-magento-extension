@@ -1,0 +1,62 @@
+{
+    "packages": {
+        "creativestyle/mailgun": {
+            "master": {
+                "name": "creativestyle/mailgun",
+                "version" : "1.0.0",
+                "source":{
+                    "url":   "git@gitlab.creativestyle.pl:adam.karnowka/magento-mailgun.git",
+                    "type" : "git",
+                    "reference" : "master"
+                }
+            }
+        },
+        "adamkarnowka/magento-cookie-restrict":{
+            "dev-master": {
+                "name": "adamkarnowka/magento-cookie-restrict",
+                "version" : "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/adamkarnowka/magento-cookie-restrict.git",
+                    "reference": "eda843dd1cab8bb530ffc7603710f33d2f0bc173"
+                },
+		"type": "magento-module",
+		"require" : {
+			"magento-hackathon/magento-composer-installer": "*"
+		}
+            }
+        },
+	"adamkarnowka/magento-stock-movements":{
+            "dev-master": {
+                "name": "adamkarnowka/magento-stock-movements",
+                "version" : "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/adamkarnowka/magento-stock-movements.git",
+                    "reference": "0a080e540e573f8a536ad5e67363b42be6720ff3"
+                },
+		"type": "magento-module",
+		"require" : {
+			"magento-hackathon/magento-composer-installer": "*"
+		}
+            }
+        },
+	 "creativestyle/sare":{
+            "dev-master": {
+                "name": "creativestyle/sare",
+                "version" : "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/adamkarnowka/magento-sare-integration.git",
+                    "reference": "8b279c633d9ef89876ad5466d039198290f6c70b"
+                },
+		"type": "magento-module",
+		"require" : {
+			"magento-hackathon/magento-composer-installer": "*"
+		}
+            }
+        }
+
+    }
+}
+

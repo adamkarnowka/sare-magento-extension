@@ -1,0 +1,22 @@
+##################################################################################
+#                                                                                #
+#  This sarescript will connect to your Magento and fetch list                   #
+#  of all users which should get abandoned cart notification.                    #
+#  Make sure you update $url variable to match your abandoned carts interface.   #
+#  Required big registry called "abandonedCartUsers"                             #
+#  Datasource: none                                                              #
+#                                                                                #
+##################################################################################
+
+bigregistry_set('abandonedCartUsers', "a:0:{}");
+$currentRegistryValues = unserialize(bigregistry_get('abandonedCartUsers'));
+
+$url = "http://premium-club.fanorakel.de/test.html";
+$serialized = get_url($url);
+$arr = unserialize($serialized);
+for($i=0 to count($arr)-1){
+	$tmpArr = $arr[$i];
+	$customerId = $tmpArr['customer_id'];
+	$currentRegistryValues[count($currentRegistryValues)] = $customerId;
+}
+bigregistry_set('abandonedCartUsers', serialize($currentRegistryValues));

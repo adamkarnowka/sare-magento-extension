@@ -1,0 +1,9 @@
+app/code/community/Creativestyle/Sare                   app/code/community/Creativestyle/Sare
+app/design/adminhtml/default/default/layout/sare.xml    app/design/adminhtml/default/default/layout/sare.xml
+app/design/adminhtml/default/default/template/sare      app/design/adminhtml/default/default/template/sare
+app/design/frontend/base/default/template/sare          app/design/frontend/base/default/template/sare
+app/etc/modules/Creativestyle_Sare.xml                  app/etc/modules/Creativestyle_Sare.xml
+app/locale/pl_PL/sare.csv                               app/locale/pl_PL/sare.csv
+js/sare                                                 js/sare
+skin/adminhtml/base/default/css/sare.css                skin/adminhtml/base/default/css/sare.css
+skin/adminhtml/default/default/images/sare              skin/adminhtml/default/default/images/sare

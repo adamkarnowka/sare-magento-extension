@@ -1,0 +1,20 @@
+{
+    "name": "creativestyle/sare",
+    "type": "magento-module",
+    "description": "Magento integration with SARE email marketing software.",
+    "keywords":["magento","email marketing"],
+    "homepage":"http://www.sare.pl/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Karnowka",
+            "email": "adam.karnowka@creativestyle.pl",
+            "homepage": "http://creativestyle.pl",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*",
+        "php": ">=5.2.0"
+    }
+}

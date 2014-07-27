@@ -1,0 +1,20 @@
+<?php $items = $this->getItems();?>
+<?php if(count($items)>0){?>
+    <br/>
+    <table cellspacing="0" cellpadding="0" width="570">
+    <?php $c = 0;?>
+    <?php foreach($items as $item){?>
+
+        <?php foreach($item->getAllVisibleItems() as $quoteItem){ ?>
+            <?php $c++;?>
+            <tr>
+                <td height="90" width="90" style="<?php if($c%2==1)echo 'background-color: #FAFAFA;'; ?>border-bottom: 1px solid #F7F7F7;" align="center"><img style="border:1px solid #F0F0F0;" src="<?php echo Mage::Helper('catalog/image')->init(Mage::getModel('catalog/product')->load($quoteItem->getProductId()),'image')->resize(75,75);?>" width="75" height="75"/></td>
+                <td style="<?php if($c%2==1)echo 'background-color: #FAFAFA;'; ?>border-bottom: 1px solid #F0F0F0;width:290px;font-family: Calibri, Verdana, Arial;font-size:13px;color: #232323;"><a href="<?php echo Mage::getModel('catalog/product')->load($quoteItem->getProductId())->getProductUrl();?>" style="color: #121212;"><?php echo $quoteItem->getName();?></a></td>
+                <td style="<?php if($c%2==1)echo 'background-color: #FAFAFA;'; ?>border-bottom: 1px solid #F0F0F0;width:25px;font-family: Calibri, Verdana, Arial;font-size:17px;color: #232323;"><?php echo round($quoteItem->getQty(),0);?></td>
+                <td style="<?php if($c%2==1)echo 'background-color: #FAFAFA;'; ?>border-bottom: 1px solid #F0F0F0;width:40px;font-family: Calibri, Verdana, Arial;font-size:15px;color: #232323;"><?php echo Mage::helper('core')->currency($quoteItem->getRowTotal());?></td>
+            </tr>
+        <?php } ?>
+
+    <?php } ?>
+    </table>
+<?php } ?>

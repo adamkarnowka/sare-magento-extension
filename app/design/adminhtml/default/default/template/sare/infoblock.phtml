@@ -1,0 +1,22 @@
+<?php $url = '#';?>
+<div id="block-infoblock">
+    <div class="inside" style="height:80px;background: white url(<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN);?>/adminhtml/default/default/images/sare/sare-baner.jpg) no-repeat top right;margin-bottom:12px;">
+        <div style="margin-bottom:12px;">
+            <?php echo $this->__('Configure your SARE integration details. Click <a href=\'%s\'>here</a> to read instructions.', $url);?>
+            <br/>
+            <?php echo $this->__('Contact: Adam Karnowka / <a href=\'mailto: adam.karnowka@creativestyle.pl?subject=[SARE] Support (Magento: %s)\'>adam.karnowka@creativestyle.pl</a>', Mage::getVersion());?>.
+        </div>
+        <button class="scalable add" onclick="window.location='<?php echo Mage::helper("adminhtml")->getUrl('sare/adminhtml_index/synchro');?>';return false;"><span><span><?php echo $this->__('Synchronize list');?></span></span></button>
+        <button class="scalable save" onclick="window.location='https://ww0.enewsletter.pl/index2.php';return false;"><span><span><?php echo $this->__('Login to SARE panel');?></span></span></button>
+        <button class="scalable show-hide" onclick="window.location='<?php echo Mage::helper("adminhtml")->getUrl('sare/adminhtml_index/logs');?>';return false;"><span><span><?php echo $this->__('Review logs');?></span></span></button>
+        <div class="creativestyle">
+            <div class="cs-logo">
+                <a href="http://www.creativestyle.de/" target="_blank">
+                    <img height="20" src="http://www.creativestyle.pl/email-marketing/logo.php"/>
+                </a>
+            </div>
+            <?php echo $this->__('Created by <a href="http://www.creativestyle.de" target="_blank">creativestyle</a> | Support: ');?> <a href="mailto: emailmarketing@creativestyle.de">emailmarketing@creativestyle.de</a>
+        </div>
+    </div>
+</div>
+
