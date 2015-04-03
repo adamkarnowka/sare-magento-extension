@@ -340,6 +340,17 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <sort_order>1000</sort_order>
+                    <fields>
+                        <info translate="label">
+                            <label>HTML block</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>sare/adminhtml_smtpinfoblock</frontend_model>
+                            <sort_order>-1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </info>
+                    </fields>
                 </smtp>
                 <!--<abandonedcarts_settings>
                 <label>Abandoned carts interface</label>
