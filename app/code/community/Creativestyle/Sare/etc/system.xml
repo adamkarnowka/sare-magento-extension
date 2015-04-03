@@ -332,6 +332,15 @@
                         </enabled_addresschange>
                     </fields>
                 </targeting_settings>
+                <smtp>
+                    <label>SMTP Integration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <sort_order>1000</sort_order>
+                </smtp>
                 <!--<abandonedcarts_settings>
                 <label>Abandoned carts interface</label>
                 <frontend_type>text</frontend_type>
