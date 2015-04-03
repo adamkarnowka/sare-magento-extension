@@ -11,7 +11,7 @@
 bigregistry_set('abandonedCartUsers', "a:0:{}");
 $currentRegistryValues = unserialize(bigregistry_get('abandonedCartUsers'));
 
-$url = "http://premium-club.fanorakel.de/test.html";
+$url = "***";
 $serialized = get_url($url);
 $arr = unserialize($serialized);
 for($i=0 to count($arr)-1){

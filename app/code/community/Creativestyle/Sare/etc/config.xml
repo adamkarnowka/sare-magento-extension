@@ -53,18 +53,18 @@
         <events>
             <customer_address_save_after>
                 <observers>
-                    <your_unique_event_name>
+                    <address_save_after>
                         <class>creativestyle_sare/observer</class>
-                        <method>test</method>
-                    </your_unique_event_name>
+                        <method>customerAddressSaveAfter</method>
+                    </address_save_after>
                 </observers>
             </customer_address_save_after>
             <newsletter_subscriber_save_commit_after>
                 <observers>
-                    <your_unique_event_name>
+                    <after_subsriber_save>
                         <class>creativestyle_sare/observer</class>
                         <method>newsletterSubscriberSaveCommitAfter</method>
-                    </your_unique_event_name>
+                    </after_subsriber_save>
                 </observers>
             </newsletter_subscriber_save_commit_after>
             <newsletter_subscriber_delete_after>

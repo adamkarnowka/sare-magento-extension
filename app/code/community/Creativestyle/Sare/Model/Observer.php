@@ -47,8 +47,8 @@ class Creativestyle_Sare_Model_Observer{
         return $observer;
     }
 
-    public function test($event){
-        if(!Mage::getStoreConfig('sare/settings/enabled')||!Mage::getStoreConfig('sare/settings/enabled_addresschange')){
+    public function customerAddressSaveAfter($event){
+        if(!Mage::getStoreConfig('sare/settings/enabled')||!Mage::getStoreConfig('sare/targeting_settings/enabled_addresschange')){
             return $event;
         }
         $customerId = $event->getCustomerAddress()->getCustomerId();
