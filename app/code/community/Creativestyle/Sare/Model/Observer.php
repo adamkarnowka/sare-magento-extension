@@ -106,8 +106,6 @@ class Creativestyle_Sare_Model_Observer{
             return false;
         }
 
-
-
         // Now check if we have mkey for this email address
         $sareSubscriberModel = Mage::getModel('creativestyle_sare/email')->loadByAttribute($customer->getEmail(), 'email');
 

@@ -392,7 +392,7 @@ class Creativestyle_Sare_Model_Customer extends Mage_Core_Model_Abstract{
             $count ++;
         }
         if($count>0){
-            return round($value/$count,2);
+            return round($value / $count,2);
         }
         return 0;
     }
