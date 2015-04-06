@@ -27,7 +27,7 @@ class Creativestyle_Sare_Helper_Data extends Mage_Core_Helper_Abstract {
             '%TITLE%'=> Mage::helper('sare')->__($title),
             '%MESSAGE%'=> Mage::helper('sare')->__($description),
             '%REQUEST%'=> $modelData,
-            '%FOOTER%'=>Mage::helper('sare')->__('You receive these emails, because your address was entered in Magento configuration panel. You can disable them in Magento backend - Newsletter / SARE integration / Settings. <br/><br/>Have a nice day!<br/>SARE team.'),
+            '%FOOTER%'=>Mage::helper('sare')->__('You receive these emails, because your address was entered in Magento configuration panel. <br/>You can disable them in Magento backend - Newsletter / SARE integration / Settings. <br/><br/>Have a nice day!<br/>SARE team.'),
             '%API_URL%'=>trim($apiUrl)
         );
 
