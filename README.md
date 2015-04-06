@@ -31,7 +31,7 @@ Since we're available on http://packages.firegento.com you can install this exte
 2. Type in your project root:
    ```php composer.phar require creativestyle/sare dev-master```
 
-You can always [download .zip file](https://github.com/adamkarnowka/magento-sare-integration/archive/master.zip) or close this git or visit [Magento Connect](http://www.magentocommerce.com/magento-connect/sare-integration-1.html), extension key is:   ```http://connect20.magentocommerce.com/community/Creativestyle_Sare```.
+You can always [download .zip file](https://github.com/adamkarnowka/sare-magento-integration/archive/master.zip) or close this git or visit [Magento Connect](http://www.magentocommerce.com/magento-connect/sare-integration-1.html), extension key is:   ```http://connect20.magentocommerce.com/community/Creativestyle_Sare```.
 
 For post installation help please check user's manual file - [english](https://github.com/adamkarnowka/magento-sare-integration/blob/master/SARE-users-manal_en.pdf?raw=true), [polish](https://github.com/adamkarnowka/magento-sare-integration/blob/master/SARE-users-manal_pl.pdf?raw=true).
 
@@ -41,13 +41,13 @@ Help needed? Please contact <emailmarketing@creativestyle.de>
 Screenshots
 ----------------------------------------------------------
 Main configuration panel:
-![Alt text](http://albemuth.pl/sare/1.png "Screenshot")
+![Alt text](https://raw.githubusercontent.com/adamkarnowka/sare-magento-extension/master/screenshots/1.png "Screenshot")
 
 Advanced features to export:
-![Alt text](http://albemuth.pl/sare/2.png "Screenshot")
+![Alt text](https://raw.githubusercontent.com/adamkarnowka/sare-magento-extension/master/screenshots/2.png "Screenshot")
 
 Batch processing:
-![Alt text](http://albemuth.pl/sare/3.png "Screenshot")
+![Alt text](https://raw.githubusercontent.com/adamkarnowka/sare-magento-extension/master/screenshots/4.png "Screenshot")
 
-Configuration panel:
-![Alt text](http://albemuth.pl/sare/4.png "Screenshot")
+SMTP Integration:
+![Alt text](https://raw.githubusercontent.com/adamkarnowka/sare-magento-extension/master/screenshots/3.png "Screenshot")
