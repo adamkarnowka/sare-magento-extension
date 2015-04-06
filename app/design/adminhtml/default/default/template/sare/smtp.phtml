@@ -6,7 +6,7 @@
             <tr>
                 <td><b><?php echo $this->__('Integrate SMTP server with Magento');?>:</b><br/><br/>
                     <?php if(Mage::helper('core')->isModuleEnabled('Creativestyle_SMTP')){?>
-                        <?php echo $this->__('SMTP extension is already installed. <a href="%s">Configure it here</a>',Mage::helper("adminhtml")->getUrl('adminhtml/system_config/edit/section/creativestyle_smtp'));?>
+                        <?php echo $this->__('SMTP extension is already installed. <a href="%s">Configure it here</a>.',Mage::helper("adminhtml")->getUrl('adminhtml/system_config/edit/section/creativestyle_smtp'));?>
                     <?php } else { ?>
                         <?php echo $this->__('SMTP extension is not installed, <a href="%s">get it here</a>', 'https://github.com/adamkarnowka/magento-smtp-relay');?>
                     <?php } ?>
@@ -20,7 +20,8 @@
                         <li><?php echo $this->__('Use dynamical content to persnalize e-mails at SARE side');?></li>
                     </ul>
                     <br/>
-                    <?php echo $this->__('More info and pricing: <a href="http://sare.pl/smtp/index.php?lang=en">http://sare.pl/smtp/index.php?lang=en</a>.');?>
+                    <?php echo $this->__('More info and pricing: <a href="http://sare.pl/smtp/index.php?lang=en">http://sare.pl/smtp/index.php?lang=en</a>.');?><br/>
+                    <?php echo $this->__('Read how to configure SMTP account <a href="http://sare.pl/upload/pl/SMTP_-_Outlook.pdf">here</a>.');?>
                 </td>
             </tr>
         </table>
