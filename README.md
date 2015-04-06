@@ -49,5 +49,5 @@ Advanced features to export:
 Batch processing screenshot:
 ![Alt text](https://raw.githubusercontent.com/adamkarnowka/sare-magento-extension/master/screenshots/4.png "Screenshot")
 
-SMTP Integration:
+SMTP Integration screenshot:
 ![Alt text](https://raw.githubusercontent.com/adamkarnowka/sare-magento-extension/master/screenshots/3.png "Screenshot")
